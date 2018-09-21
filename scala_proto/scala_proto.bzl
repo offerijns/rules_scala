@@ -67,8 +67,8 @@ def scala_proto_repositories(
   _scala_maven_import_external(
       name = "scala_proto_rules_scalapb_plugin",
       artifact = _scala_mvn_artifact(
-          "com.thesamet.scalapb:compilerplugin:0.7.0", major_version),
-      jar_sha256 = scala_version_jar_shas["scalapb_plugin"],
+          "com.thesamet.scalapb:compilerplugin:0.8.0-RC2", major_version),
+      # jar_sha256 = scala_version_jar_shas["scalapb_plugin"],
       licenses = ["notice"],
       server_urls = maven_servers)
 
@@ -90,9 +90,9 @@ def scala_proto_repositories(
 
   _scala_maven_import_external(
       name = "scala_proto_rules_scalapbc",
-      artifact = _scala_mvn_artifact("com.thesamet.scalapb:scalapbc:0.7.0",
+      artifact = _scala_mvn_artifact("com.thesamet.scalapb:scalapbc:0.8.0-RC2",
                                      major_version),
-      jar_sha256 = scala_version_jar_shas["scalapbc"],
+      # jar_sha256 = scala_version_jar_shas["scalapbc"],
       licenses = ["notice"],
       server_urls = maven_servers)
   native.bind(
@@ -102,8 +102,8 @@ def scala_proto_repositories(
   _scala_maven_import_external(
       name = "scala_proto_rules_scalapb_runtime",
       artifact = _scala_mvn_artifact(
-          "com.thesamet.scalapb:scalapb-runtime:0.7.0", major_version),
-      jar_sha256 = scala_version_jar_shas["scalapb_runtime"],
+          "com.thesamet.scalapb:scalapb-runtime:0.8.0-RC2", major_version),
+      # jar_sha256 = scala_version_jar_shas["scalapb_runtime"],
       licenses = ["notice"],
       server_urls = maven_servers)
   native.bind(
@@ -113,8 +113,8 @@ def scala_proto_repositories(
   _scala_maven_import_external(
       name = "scala_proto_rules_scalapb_runtime_grpc",
       artifact = _scala_mvn_artifact(
-          "com.thesamet.scalapb:scalapb-runtime-grpc:0.7.0", major_version),
-      jar_sha256 = scala_version_jar_shas["scalapb_runtime_grpc"],
+          "com.thesamet.scalapb:scalapb-runtime-grpc:0.8.0-RC2", major_version),
+      # jar_sha256 = scala_version_jar_shas["scalapb_runtime_grpc"],
       licenses = ["notice"],
       server_urls = maven_servers)
   native.bind(
@@ -123,9 +123,9 @@ def scala_proto_repositories(
 
   _scala_maven_import_external(
       name = "scala_proto_rules_scalapb_lenses",
-      artifact = _scala_mvn_artifact("com.thesamet.scalapb:lenses:0.7.0",
+      artifact = _scala_mvn_artifact("com.thesamet.scalapb:lenses:0.8.0-RC2",
                                      major_version),
-      jar_sha256 = scala_version_jar_shas["scalapb_lenses"],
+      # jar_sha256 = scala_version_jar_shas["scalapb_lenses"],
       licenses = ["notice"],
       server_urls = maven_servers)
   native.bind(
